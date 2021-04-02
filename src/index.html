@@ -9,8 +9,71 @@
   <title>CS 2350 Starter Project</title>
 </head>
 
-<body>
-  <h1>Welcome to CS2350!</h1>
+<body id="landing">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Levi Hughes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tic-tac-toe.html">Tic-tac-toe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/responsive.html">Responsive Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/top10.html">Top 10 Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/github.html">GitHub Users</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="bg-light p-5 text-center">
+    <h1 class="mb-3">Welcome to CS2350 Examples</h1>
+    <h4 class="mb-3">HTML, CSS, and javascript</h4>
+    <a href="" class="btn btn-primary btn-large">See more ...</a>
+  </div>
+
+  <!-- Guest book -->
+  <div class="container">
+    <h1>Guest Book</h1>
+    <form id="guestForm" method="POST">
+      <div class="form-group">
+        <label for="fn">First Name</label>
+        <input type="text" id="fn" name="fn" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="ln">Last Name</label>
+        <input type="text" id="ln" name="ln" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary m-1">Sumbit</button>
+    </form>
+
+    <h1>Registered Guests</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </div>
+
   <script src="/javascripts/main.js"></script>
 </body>
 
